@@ -1,0 +1,119 @@
+#head-cont {
+  position: absolute;
+  width: 30%;
+  height: 70%;
+  top: 10vmax;
+  left: 38%;
+  z-index: 500;
+  /* background-color: bisque; */
+}
+#head-cont > h1 {
+  font-size: 4.5vmax;
+  animation: pulse 2s infinite;
+}
+h2 {
+  color: rgb(194, 194, 25);
+}
+.wrapper-btn {
+  position: absolute;
+  top: 100vh;
+  width: 20%;
+  height: 7%;
+}
+.butn1 {
+  left: 5vw;
+  background-color: rgb(7, 145, 7);
+  border: 2px inset solid greenyellow;
+  color: white;
+  cursor: pointer;
+}
+.butn2 {
+  left: 30vw;
+  background: rgba(17, 17, 50, 0.922);
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, darkblue, magenta);
+  z-index: 2;
+  cursor: pointer;
+  color: white;
+}
+a {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+a span .icon {
+  position: relative;
+  z-index: 2;
+}
+
+a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.35s;
+}
+.butn1 > a:after {
+  background: rgba(6, 59, 6, 0.553);
+}
+.butn2 > a:after {
+  background: rgba(192, 192, 192, 0.26);
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+@media (max-width: 1100px){
+  #head-cont{
+    top: 15vmax;
+  }
+}
+@media (max-width: 950px){
+  #head-cont{
+    top: 20vmax;
+  }
+  .wrapper-btn{
+    width: 30%;
+    height: 7%;
+  }
+  .butn1{
+    left: 10%
+  }
+  .butn2{
+    left: 60%;
+  }
+  a{
+    font-size: 1.5vmax;
+  }
+}
+@media (max-width: 800px){
+  #head-cont{
+    top: 28vmax;
+  }
+}
+@media (max-width: 650px){
+  #head-cont{
+    width: 70%;
+    height: 30%;
+    top: 50%;
+    left: 20%;
+    right: 50%;
+  }
+}

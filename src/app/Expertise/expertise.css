@@ -1,0 +1,131 @@
+#expert-cont {
+  width: 100%;
+  height: 145vh;
+  background-color: rgba(245, 245, 245, 0.897);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: hidden;
+  color: white;
+  border-bottom: 2px inset silver;
+  position: relative;
+}
+#expert-cont > h1 {
+  color: black;
+  font-size: 2.5vmax;
+  margin-top: 3vmax;
+}
+#h2-cont {
+  text-align: center;
+  width: 63%;
+  height: 10vh;
+}
+#h2-cont > h2 {
+  text-transform: capitalize;
+  color: gray;
+  font-size: 1.3vmax;
+}
+.grid-cont2 {
+  width: 90%;
+  height: 65%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1vmax;
+}
+.langs {
+  background-color: white;
+  width: 85%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.langs > img {
+  width: 15%;
+  height: 50%;
+  margin-left: 1vmax;
+}
+.langs > h3 {
+  color: black;
+  margin-left: 0.5vmax;
+  font-size: 1.3vmax;
+}
+.langs:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+.stack-btn {
+  width: 20%;
+  height: 5%;
+}
+.butn3 {
+  background-color: rgb(255, 106, 0);
+  color: white;
+  border-width: 2px;
+  border-style: solid;
+  border: 2px inset orange;
+  z-index: 2;
+  cursor: pointer;
+}
+.butn3 > a:after {
+  background-color: rgba(61, 52, 44, 0.295);
+}
+@media (max-width: 900px) {
+  #expert-cont > h1 {
+    font-size: 3vmax;
+  }
+  #h2-cont {
+    width: 75%;
+  }
+  #h2-cont > h2 {
+    font-size: 2vmax;
+  }
+  .grid-cont2 {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .langs > h3 {
+    font-size: 1.6vmax;
+  }
+  .stack-btn{
+    width: 25%;
+  }
+}
+@media (max-width: 600px) {
+  #expert-cont {
+    height: 190vh;
+  }
+  #expert-cont > h1 {
+    font-size: 3.5vmax;
+  }
+  #h2-cont {
+     width: 85%;
+  }
+  #h2-cont > h2 {
+    font-size: 2.5vmax;
+  }
+  .grid-cont2 {
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .langs > h3 {
+    font-size: 2vmax;
+  }
+  .stack-btn{
+    width: 30%;
+  }
+}
+@media (max-width: 480px){
+  #expert-cont> h1{
+     font-size: 2.8vmax;
+  }
+  .stack-btn{
+    width: 30%;
+  }
+}

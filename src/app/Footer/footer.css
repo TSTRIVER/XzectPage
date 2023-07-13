@@ -1,0 +1,135 @@
+#foot-cont {
+  width: 100%;
+  height: 130vh;
+  background-color: rgba(0, 0, 0, 0.868);
+  overflow-y: hidden;
+  position: relative;
+}
+#boxes {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#rights {
+  width: 100%;
+  height: 5%;
+  background-color: black;
+}
+#box1 {
+  width: 32%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-left: 5vmax;
+}
+#box1 > h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.4vmax;
+}
+#para {
+  font-size: 0.65vmax;
+  line-height: 2.5vmax;
+}
+#para > h2 {
+  color: white;
+  text-align: justify;
+  text-align-last: right;
+}
+#box1 > h4 {
+  color: white;
+  font-size: 0.95vmax;
+}
+#social-logs{
+    width: 60%;
+    height: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.ics{
+    margin-right: 1vmax;
+}
+.ics:hover{
+    transform: scale(1.1);
+}
+.box-styles {
+  width: 15%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 5vmax;
+}
+
+.sep2{
+  margin-left: 7vmax;
+}
+.sep3{
+  margin-left: 5vmax;
+}
+
+.box-styles > h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.3vmax;
+}
+.box-styles > h2{
+   font-size: 0.95vmax;
+}
+.subcats{
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.797);
+}
+.subcats:hover{
+  color: rgba(3, 3, 168, 0.671);
+}
+#rights{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#rights > h3{
+  color: white;
+  font-size: 1vmax;
+}
+@media (max-width: 1100px){
+  #foot-cont{
+    height: 350vh;
+  }
+  #boxes{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #box1{
+    width: 90%;
+  }
+  #box1 > h1{
+    font-size: 3vmax;
+  }
+  #para{
+    font-size: 1.4vmax;
+  }
+  #para > h2{
+    text-align-last: left;
+  }
+  #box1 > h4{
+    font-size: 1.5vmax;
+  }
+  .sep2 ,.sep3 ,.box-styles,#box1{
+    margin-left: 5vmax;
+  }
+  .box-styles > h1{
+    font-size: 2vmax;
+  }
+  .box-styles > h2{
+    font-size: 1.5vmax;
+  }
+  #rights > h3{
+    font-size: 2vmax;
+  }
+}
